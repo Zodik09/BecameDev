@@ -3,16 +3,8 @@
 Welcome to my web projects repository! This repository contains various web development projects that I have created. Each project is stored in its own directory and includes all the necessary files to run and understand the project.
 
 ## Projects
-<!-- 
-1. **Project 1: [Blog]**
-    - Description: A brief description of what this project does.
-    - Technologies: List of technologies used (e.g., HTML, CSS, JavaScript, etc.)
-    - Status: Current status of the project (e.g., Completed, In Progress, etc.) -->
 
-<!-- 2. **Project 2: [Project Name]**
-    - Description: A brief description of what this project does.
-    - Technologies: List of technologies used (e.g., HTML, CSS, JavaScript, etc.)
-    - Status: Current status of the project (e.g., Completed, In Progress, etc.) -->
+1. [Blog](Blog)
 
 ## Getting Started
 
