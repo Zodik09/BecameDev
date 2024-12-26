@@ -1,3 +1,28 @@
 <%- include('partials/header.ejs') %>
-<%- include('partials/navbar.ejs') %>
+<h1 id="heading">Create your post 👇.</h1>
+<div class="editorContainer">
+  <div class="editor">
+    <form action="/create" method="post">
+      <!-- <label for="title">Title</label> -->
+      <input
+        type="text"
+        id="title"
+        name="title"
+        placeholder="Enter the project title..."
+        required
+      />
+      <!-- <label for="desc">Description</label> -->
+      <textarea
+        name="desc"
+        id="desc"
+        placeholder="Write the description..."
+        required
+      ></textarea>
+      <button id="cancel" type="button">
+        Cancel
+      </button>
+      <input id="create" type="submit" value="Post" />
+    </form>
+  </div>
+</div>
 <%- include('partials/footer.ejs') %>

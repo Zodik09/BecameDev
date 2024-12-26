@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat";
+    &::selection{
+        background-color: var(--theme-clr);
+        color: white;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+:root {
+    --theme-clr: #D81159;
+    /* --theme-clr: #217b9b; */
+}
+
+#heading {
+    text-align: center;
+    color: var(--theme-clr);
+    font-weight: 900;
+}
+
+.editorContainer {
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: red; */
+    padding: 2vw;
+}
+
+.editor {
+    width: 100%;
+    /* min-height: 30vh; */
+    /* background-color: rgba(0, 255, 128, 0.534); */
+    border-radius: 1vw;
+    padding: 1vw;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+input {
+    height: 3vw;
+}
+button{
+    background-color: white !important;
+    color: var(--theme-clr) !important;
+    /* border: 2px solid var(--theme-clr); */
+    transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.2s;
+    /* cursor: pointer; */
+}
+input#create,
+button#cancel {
+    display: inline-block;
+    background-color: var(--theme-clr);
+    color: white;
+    font-size: 2vw;
+    padding: 0 1vw;
+    width: fit-content;
+    height: auto;
+    border: none;
+    font-weight: 600;
+    border: 2px solid var(--theme-clr);
+    transition: all cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.2s;
+    cursor: pointer;
+    border-radius: 1vw;
+
+    &:hover {
+        background-color: white;
+        color: var(--theme-clr);
+        border: 2px solid var(--theme-clr);
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+}
+
+textarea {
+    resize: none;
+    margin: 1vw 0;
+    height: 50vh;
+    /* overflow: hidden; */
+    &::-webkit-scrollbar {
+        width: 0.5vw;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--theme-clr);
+        border-radius: 1vw;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 2px solid var(--theme-clr);
+    border-radius: 0.5vw;
+    padding: 1vw;
+    font-weight: 700;
+    font-size: 1.2vw;
+
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.502);
+        font-weight: 700;
+    }
+
+    &:focus {
+        border-color: green;
+    }
+}

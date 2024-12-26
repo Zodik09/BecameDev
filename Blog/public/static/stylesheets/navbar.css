@@ -15,35 +15,42 @@ nav ul {
     display: flex;
     align-items: center;
 }
-nav ul h1{
-    color: #217b9b;
+
+nav ul h1 {
+    color: var(--theme-clr);
 }
-nav ul.navigation{
-gap: 2vw;
+
+nav ul.navigation {
+    gap: 2vw;
 }
 
 nav ul li {
     position: relative;
     font-weight: 700;
-
-    &:hover a:after {
-        transition: width ease-in-out 0.5s;
-        width: 100%;
-    }
 }
 
 nav ul li a {
     color: black;
-
-    &:after {
-        content: "";
-        width: 0%;
-        height: 0.3vw;
-        background-color: black;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-        transition: width ease-in-out 0.5s;
+    display: flex;
+    position: relative;
+    transition: all ease-in-out 0.2s;
+    &:hover{
+        color: var(--theme-clr);
     }
+}
+
+nav ul.navigation li a:after {
+    content: "";
+    width: 0%;
+    height: 0.2vw;
+    background-color: var(--theme-clr);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: width ease-in-out 0.2s;
+}
+
+nav ul.navigation li:hover a:after {
+    width: 100%;
 }

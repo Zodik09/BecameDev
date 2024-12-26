@@ -1,0 +1,12 @@
+footer{
+    display: inline-block;
+    border-top-right-radius: 2vw;
+    padding: 0.5vw 1vw;
+    font-weight: 600;
+    font-size: 1vw;
+    position:fixed;
+    color: white;
+    background-color: var(--theme-clr);
+    bottom: 0;
+    left: 0;
+}

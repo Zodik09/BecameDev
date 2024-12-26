@@ -1,0 +1,19 @@
+.card {
+    width: 30vw;
+    height: 15vw;
+    background-color: var(--theme-clr);
+    border-radius: 1vw;
+    overflow: hidden;
+    padding: 0.5vw;
+}
+
+.cardHeading {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* margin-bottom: 0.5vw; */
+}
+.cardPara {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
